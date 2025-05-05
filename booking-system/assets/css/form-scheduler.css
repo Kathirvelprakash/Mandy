@@ -56,6 +56,15 @@ body {
   align-items: center;
 }
 
+.inputFlex{
+  width: 100%;
+}
+
+.inputFlex label{
+  display: block;
+  color: #747474;
+}
+
 .row input {
   flex: 1;
   min-width: 100px;

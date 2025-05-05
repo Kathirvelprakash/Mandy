@@ -33,19 +33,31 @@ $vehicles = $vehicleObj->getAllVehicles();
       <div class="form-section">
         <div class="step-title"><span>1</span>Contact Information</div>
         <div class="row">
-          <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
-          <span class="error-msg" id="first_name_error"></span>
-
-          <input type="text" name="last_name" placeholder="Last Name" required>
+          <div class="inputFlex">
+            <label>First Name</label>
+            <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+            <span class="error-msg" id="first_name_error"></span>
+          </div>
+          <div class="inputFlex">
+          <label>Last Name</label>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <span class="error-msg" id="first_name_error"></span>
+          </div>
         </div>
-
-        <input type="email" name="email" id="email" placeholder="Email" required>
-        <span class="error-msg" id="email_error"></span>
-
-        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required pattern="[0-9]{10}" maxlength="10">
-        <span class="error-msg" id="phone_error"></span>
-
-        <textarea name="comments" placeholder="Comments"></textarea>
+        <div class="inputFlex">
+          <label for="">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <span class="error-msg" id="email_error"></span>
+        </div>
+        <div class="inputFlex">
+          <label for="">Phone Number</label>
+          <input type="tel" name="phone" id="phone" placeholder="Phone Number" required pattern="[0-9]{10}" maxlength="10">
+          <span class="error-msg" id="phone_error"></span>
+        </div>
+        <div class="inputFlex">
+          <label>Comments</label>
+          <textarea name="comments" placeholder="Comments"></textarea>
+        </div>
 
         <div class="step-title"><span>2</span>Select Your Service</div>
         <div class="checkbox-group">
