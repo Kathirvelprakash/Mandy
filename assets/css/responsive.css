@@ -1,0 +1,304 @@
+/* Up to 1024px */
+@media (max-width: 1024px) {
+/* ----------- Header --------- */
+    .header-con {
+        gap: 5px;
+    }
+
+    .header-menu p {
+        font-size: 10px;
+    }
+
+/* ----------- Slider Section --------- */
+
+    .slide-text{
+        width: 70%;
+    }
+    
+    .swiper {
+        width: 100%;
+        height: 60vh;
+    }
+
+/* ----------- Client Section --------- */
+
+    .clientsLogo{
+        gap: 50px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+/* ----------- Community Section --------- */
+
+    .communityInfo {
+        width: 50%;
+    }
+
+    .communityFeatures {
+        gap: 30px;
+    }
+/* ----------- Unkown Section --------- */
+
+    .unlock-content{
+        gap: 30px;
+    }
+
+    .unlock-info{
+        margin-right: 10%;
+    }  
+/* ----------- CommunityUpdates Section --------- */
+
+    .communityUpdates-post {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .post_con {
+        width: 90%;
+    }  
+
+/* ----------- Footer --------- */
+
+    .footer{
+        padding: 40px 0;
+    }
+
+    .footer-container {
+        gap: 5px;
+        width: 95%;
+    }
+    .footer-col {
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .footer-col-links {
+        align-items: center;
+    }
+}
+
+/* Tablet & below */
+@media (max-width: 768px) {
+/* ----------- Header --------- */
+    .header {
+        height: auto;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .header-con {
+        justify-content: space-between;
+    }
+
+    .header-hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .header-hamburger span {
+        height: 2px;
+        width: 20px;
+        background-color: #333;
+        transition: 0.3s;
+    }
+
+    .header-menus {
+        display: none;
+        background-color: #ffffff;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        z-index: 999;
+    }
+
+    .header-menus.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .header-button {
+        margin-top: 15px;
+    }
+
+    .close-icon {
+        align-self: flex-end;
+        font-size: 20px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        display: none;
+        width: 100%;
+        padding-left: 20px;
+    }
+    
+    .dropdown.active .dropdown-menu {
+        display: flex;
+    }
+
+/* ----------- Slider Section --------- */
+
+    .slide-text{
+        width: 65%;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 65vh;
+    }
+
+/* ----------- Client Section --------- */
+
+    .clientsLogo{
+        gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+/* ----------- Community Section --------- */
+
+    .communityInfo {
+        width: 80%;
+    }
+
+    .communityFeatures {
+        gap: 20px;
+    }
+
+    .communityFeatures{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+/* ----------- Unkown Section --------- */
+
+    .unlock-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .unlock-info{
+        align-items: center;
+        margin-right: 0%;
+    }  
+
+    .unlock-image img {
+        width: 400px;
+    }
+
+    .unlock-info p, .unlock-info h2 {
+        text-align: center;
+    }
+
+/* ----------- CommunityUpdates Section --------- */
+
+    .communityUpdates-post {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+/* ----------- Footer --------- */
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 40px 0;
+    }
+
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2{
+        text-align: center;
+    }
+    
+/* ----------- Header --------- */
+    .header-con {
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+    }
+
+    .header-logo img {
+        height: 16px;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .header-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+/* ----------- Slider Section --------- */
+
+    .slide-text{
+        width: 50%;
+        gap: 5px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 40vh;
+    }
+
+/* ----------- Community Section --------- */
+
+    .communityInfo {
+        width: 90%;
+    }
+
+    .communityFeatures{
+        grid-template-columns: 1fr;
+    }
+
+/* ----------- Unlock Section --------- */
+
+    .unlock-image img {
+        width: 400px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .unlock-info{
+        margin-right: 0%;
+    }  
+
+/* ----------- CommunityUpdates Section --------- */
+    .communityUpdates-post {
+        grid-template-columns: 1fr;
+    }
+
+    .post_con {
+        margin: -20% auto 0;
+        padding: 16px;
+    }
+}
